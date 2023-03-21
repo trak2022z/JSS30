@@ -4,15 +4,16 @@
 
     function init() {
 
-      //let a = false;
-      let a = true;
+      //Condition
+      let a = false;
+      //let a = true;
 
 // Create a Promise
 let promise = new Promise(function(resolve, reject) {
   if(a){
     resolve('Resolving a fake Promise.');
   } else {
-    reject(new Error('Rejecting a fake Promise to handle with .catch().'));
+    reject('Rejecting a fake Promise to handle with .catch().');
   }
     
 });
